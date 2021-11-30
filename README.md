@@ -52,7 +52,7 @@ The configuration file requires API keys and tokens for authentication. The link
 
 --- 
 
-4. 
+6. 
 For Unicorn hat mini
 ```bash
 python3 ./uticker.py
