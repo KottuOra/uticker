@@ -25,7 +25,7 @@ Login to your raspberry pi.
 1. Use git to clone the repo.
 
 ```bash
-git clone https://github.com/tsenyurt/uticker.git
+git clone https://github.com/KottuOra/uticker.git
 ```
 
 2. Change to project folder.
