@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+
+general = {
+    "data_refresh": 1800, # scrolling the content usually takes 3-4 minutes with 0.02 delay, provide at least 5 minutes
+    "rotate": 180,
+    "brightness": 0.3,
+    "delay": 0.04,
+    "rewind" : False, 
+    "night_mode" : True,
+    "night_starts": 18,
+    "day_starts" : 7,
+    "night_brightness": 0.1,
+    "font":"fonts/dotm.ttf"
+}
+
+easycolors = {
+    "purple"    : (255,0,126),
+    "green"     : (148,255,0),
+    "turq"      : (0,255,131),
+    "yellowish" : (255,32,0),
+    "red"       : (255,0,0),
+    "whiteish"  : (255,255,255),
+    "birdy"     : (29,161,242)
+}
+trends = {
+    "enabled" : True,
+    "apiurl": "https://api.twitter.com/1.1/trends/place.json",
+    "token" : "yourtoken", #guide is here https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens 
+    "items" : 10,
+    "color" : easycolors["birdy"],
+    "locations" : [1,23424969]
+}
+
+weather = {
+    "enabled" : True,
+    "apiurl": "https://api.openweathermap.org/data/2.5/weather",
+    "appid": "yourappid", #register at https://home.openweathermap.org/users/sign_up 
+    "city" : "Sydney",
+    "units" : "metric", #Units of measurement. standard, metric and imperial units are available. If you do not use the units parameter, standard units will be applied by default.
+    "show_highlow" : True,
+    "show_humidity" : False,
+    "show_wind" : False,
+    "show_pressure" : False,
+    "color" : easycolors["whiteish"]
+}
+
+exchange = {
+    "enabled" : True,
+    "apiurl": "https://coingecko.p.rapidapi.com/exchange_rates",
+    "x-rapidapi-host":"coingecko.p.rapidapi.com",
+    'x-rapidapi-key': "yourapikey", #register at https://rapidapi.com/auth/sign-up 
+    "currencies" :["btc","eth","usd","aud","try"],
+    "color" : easycolors["purple"]
+}
+
+news = {
+    "enabled" : True,
+    "apiurl": "https://newsapi.org/v2/top-headlines",
+    "apikey": "yourapikey",#register at https://newsapi.org/register
+    "country": "au",
+    "items" : 1,
+    "color" : easycolors["yellowish"]
+}
